@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano4te | Four Pianos, One Vision - Upcoming Concert</title>
+    <meta name="description" content="Experience the magic of Piano4te, a dynamic piano quartet pushing the boundaries of classical music. Join us for our upcoming concert.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Raleway', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        
+        .landing {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #121212, #1a1a2e);
+            padding: 20px;
+            position: relative;
+            padding-bottom: 60px;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            margin: 0 0 20px 0;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #fff, #4a90e2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        .group-photo {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            margin: 20px 0;
+            background-color: rgba(74, 144, 226, 0.1);
+            border: 2px solid rgba(74, 144, 226, 0.3);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .group-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .concert-details {
+            background: rgba(74, 144, 226, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border: 1px solid rgba(74, 144, 226, 0.3);
+            width: 100%;
+        }
+        
+        .concert-details h2 {
+            font-family: 'Playfair Display', serif;
+            color: #4a90e2;
+            margin-top: 0;
+        }
+        
+        .concert-details p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .venue-address {
+            font-style: italic;
+            color: #4a90e2;
+            margin-top: 5px;
+        }
+        
+        nav {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+        }
+        
+        nav ul li a:hover {
+            color: #4a90e2;
+            border-color: #4a90e2;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #4a90e2;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border-radius: 30px;
+            text-transform: uppercase;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .cta-button:hover {
+            background-color: #357abd;
+            box-shadow: 0 0 20px rgba(74, 144, 226, 0.5);
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            .tagline { font-size: 1rem; }
+            nav ul li {
+                margin-left: 10px;
+            }
+            nav ul li a {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+            .concert-details {
+                padding: 20px;
+                margin: 20px;
+            }
+            .landing {
+                padding-bottom: 80px;
+            }
+            .group-photo {
+                height: 300px;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing">
+        <nav>
+            <ul>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#program">PROGRAM</a></li>
+                <li><a href="#tickets">TICKETS</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>PIANO4TE</h1>
+            <div class="tagline">FOUR PIANOS, ONE VISION</div>
+            <div class="group-photo">
+                <img src="/api/placeholder/800/400" alt="Piano4te Group" />
+            </div>
+            <div class="concert-details">
+                <h2>Upcoming Concert</h2>
+                <p>Join us for an evening of magnificent music</p>
+                <p><strong>Date:</strong> March 29, 2025</p>
+                <p><strong>Start Time:</strong> 7:30 PM</p>
+                <p><strong>Venue:</strong> August Wilson Center</p>
+                <p class="venue-address">980 Liberty Ave, Pittsburgh, PA</p>
+                <p><strong>Program:</strong> Works by Mozart, Rachmaninoff, and Contemporary Premieres</p>
+            </div>
+            <a href="#tickets" class="cta-button">Reserve Tickets</a>
+        </div>
+        <div class="copyright">© 2024 Piano4te. All rights reserved.</div>
+    </div>
+</body>
+</html>
