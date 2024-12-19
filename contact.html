@@ -21,14 +21,36 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                emailjs.sendForm('service_vuukspp', 'template_3hdsrbp', this)
+                emailjs.sendForm('service_idipupf', 'template_w9fwd4j', this)
                     .then(function() {
                         console.log('SUCCESS!');
-                        document.getElementById('statusMessage').innerHTML = '<p style="color: #4a90e2;">Message sent successfully!</p>';
+                        document.getElementById('statusMessage').innerHTML = `
+                            <div style="
+                                background: rgba(74, 144, 226, 0.1);
+                                border: 1px solid rgba(74, 144, 226, 0.3);
+                                padding: 20px;
+                                border-radius: 10px;
+                                margin-top: 20px;
+                                animation: fadeIn 0.5s;
+                            ">
+                                <h3 style="color: #4a90e2; margin: 0 0 10px 0;">Thank you for your message!</h3>
+                                <p style="color: #fff; margin: 0;">We'll get back to you as soon as possible.</p>
+                            </div>
+                        `;
                         document.getElementById('contact-form').reset();
                     }, function(error) {
                         console.log('FAILED...', error);
-                        document.getElementById('statusMessage').innerHTML = '<p style="color: #ff4444;">Failed to send message. Please try again later.</p>';
+                        document.getElementById('statusMessage').innerHTML = `
+                            <div style="
+                                background: rgba(255, 68, 68, 0.1);
+                                border: 1px solid rgba(255, 68, 68, 0.3);
+                                padding: 20px;
+                                border-radius: 10px;
+                                margin-top: 20px;
+                            ">
+                                <p style="color: #ff4444; margin: 0;">Failed to send message. Please try again later.</p>
+                            </div>
+                        `;
                     });
             });
         };
