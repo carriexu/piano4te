@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano4te | Media - Performance Videos</title>
+    <meta name="description" content="Watch performances and behind-the-scenes videos from Piano4te, a dynamic piano quartet pushing the boundaries of classical music.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@300;400;700&display=swap');
+        
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Raleway', sans-serif;
+            background-color: #121212;
+            color: #fff;
+        }
+        
+        .landing {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: linear-gradient(135deg, #121212, #1a1a2e);
+            padding: 20px;
+            position: relative;
+            padding-bottom: 60px;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 5rem;
+            margin: 0 0 20px 0;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            background: linear-gradient(45deg, #fff, #4a90e2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(74, 144, 226, 0.5);
+        }
+        
+        nav {
+            align-self: flex-end;
+            margin-bottom: 20px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            padding: 5px 10px;
+            border: 1px solid transparent;
+        }
+        
+        nav ul li a:hover {
+            color: #4a90e2;
+            border-color: #4a90e2;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .video-container {
+            background: rgba(74, 144, 226, 0.1);
+            border: 1px solid rgba(74, 144, 226, 0.3);
+            border-radius: 10px;
+            padding: 1rem;
+            transition: transform 0.3s ease;
+        }
+
+        .video-container:hover {
+            transform: translateY(-5px);
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .video-title {
+            margin: 0 0 1rem 0;
+            color: #4a90e2;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            text-align: left;
+        }
+
+        .video-description {
+            font-size: 0.9rem;
+            line-height: 1.4;
+            color: #ccc;
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            opacity: 0.7;
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            nav ul li {
+                margin-left: 10px;
+            }
+            nav ul li a {
+                font-size: 0.9rem;
+                padding: 3px 6px;
+            }
+            .video-grid {
+                grid-template-columns: 1fr;
+                padding: 0 1rem;
+            }
+            .landing {
+                padding-bottom: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="media.html">MEDIA</a></li>
+                <li><a href="https://events.eventgroove.com/event/Piano-4te-In-Concert-At-August-Wilson-Center-100910">TICKETS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>MEDIA</h1>
+            <div class="video-grid">
+                <div class="video-container">
+                    <h3 class="video-title">Liszt Hungarian Rhapsody No. 2</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/TIwCTPhD5Vk?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-description">Experience the dramatic and virtuosic performance of Liszt's famous Hungarian Rhapsody arranged for four pianos.</p>
+                </div>
+                <div class="video-container">
+                    <h3 class="video-title">The Beatles - Eleanor Rigby</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/UtVfE-VsIvU?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-description">Our unique arrangement of the Beatles classic "Eleanor Rigby" for four pianos brings new life to this timeless melody.</p>
+                </div>
+                <div class="video-container">
+                    <h3 class="video-title">Paganini Variations for 4 Pianos</h3>
+                    <div class="video-wrapper">
+                        <iframe src="https://www.youtube.com/embed/AfXTqWMOGys?rel=0&enablejsapi=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p class="video-description">Watch as we perform our innovative arrangement of Paganini's challenging variations, reimagined for four pianos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2024 Piano4te. All rights reserved.</div>
+    </div>
+</body>
+</html>
